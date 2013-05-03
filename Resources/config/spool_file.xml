@@ -9,8 +9,8 @@
     </parameters>
 
     <services>
-        <service id="swiftmailer.spool.file" class="%swiftmailer.spool.file.class%" public="false">
-            <argument>%swiftmailer.spool.file.path%</argument>
+        <service id="swiftmailer.spool.file.abstract" class="%swiftmailer.spool.file.class%" public="false" abstract="true">
+            <argument>%kernel.root_dir%/../data/swiftmailer/spool</argument>
         </service>
     </services>
 </container>

@@ -10,7 +10,7 @@
     </parameters>
 
     <services>
-        <service id="swiftmailer.spool.memory" class="%swiftmailer.spool.memory.class%" public="false" />
+        <service id="swiftmailer.spool.memory.abstract" class="%swiftmailer.spool.memory.class%" public="false" abstract="true" />
 
         <service id="swiftmailer.email_sender.listener" class="%swiftmailer.email_sender.listener.class%">
             <tag name="kernel.event_subscriber" />

@@ -10,9 +10,7 @@
     </parameters>
 
     <services>
-        <service id="swiftmailer.transport.spool" class="Swift_Transport_SpoolTransport" public="false">
-            <argument type="service" id="swiftmailer.transport.eventdispatcher" />
-            <argument type="service" id="swiftmailer.spool" />
+        <service id="swiftmailer.transport.spool.abstract" class="Swift_Transport_SpoolTransport" public="false" abstract="true">
         </service>
     </services>
 </container>
